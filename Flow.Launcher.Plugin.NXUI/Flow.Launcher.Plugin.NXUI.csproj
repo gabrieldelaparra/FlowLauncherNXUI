@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows7.0</TargetFramework>
+		<AssemblyName>Flow.Launcher.Plugin.NXUI</AssemblyName>
+		<PackageId>Flow.Launcher.Plugin.NXUI</PackageId>
+		<Authors>gabrieldelaparra</Authors>
+		<PackageProjectUrl>https://github.com/gabrieldelaparra/Flow.Launcher.Plugin.NXUI</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/gabrieldelaparra/Flow.Launcher.Plugin.NXUI</RepositoryUrl>
+		<PackageTags>flow-launcher flow-plugin</PackageTags>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DebugSymbols>false</DebugSymbols>
+		<DebugType>None</DebugType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="plugin.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview5" />
+		<PackageReference Include="Flow.Launcher.Plugin" Version="3.0.1" />
+		<PackageReference Include="NXUI" Version="11.0.0-preview5" />
+	</ItemGroup>
+
+	<!--<ItemGroup>
+    <ProjectReference Include="..\NXUI\src\NXUI\NXUI.csproj" />
+  </ItemGroup>-->
+
+</Project>
