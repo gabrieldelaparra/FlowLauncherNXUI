@@ -1,0 +1,12 @@
+{
+    "ID": "78B977E5-00BE-4640-9770-A0A59A51681D",
+    "ActionKeyword": "u",
+    "Name": "NXUI",
+    "Description": "a new plugin for Flow",
+    "Author": "gabrieldelaparra",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/gabrieldelaparra/Flow.Launcher.Plugin.NXUI",
+    "IcoPath": "icon.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.NXUI.dll"
+}
